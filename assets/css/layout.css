@@ -1,0 +1,45 @@
+@import './reset.css';
+@import './common.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:#fff;
+    z-index: 10;
+}
+.header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6vw;
+}
+.header .logo{
+    background: url(../images/acg-logo.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 80px;
+    height: 80px;
+}
+.header .gnb .nav{
+    display: flex;
+}
+.nav li{
+    padding: 0 40px;
+    font-size: 18px;
+}
+.top-menu{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.top-menu span{
+    width: 33px;
+    height: 2px;
+    background: #000;
+    vertical-align: top;
+}
+.top-menu span+span{
+    margin-top: 7px;
+}
