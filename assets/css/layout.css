@@ -2,6 +2,10 @@
 @import './common.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
+.header.active {
+    top: -100px;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -10,6 +14,7 @@
     background: #fff;
     z-index: 10;
     border-bottom: 1px solid #ccc;
+    transition: .4s;
 }
 
 .header .inner {
@@ -81,11 +86,13 @@ aside .close-btn span {
     margin-right: 10px;
 }
 
-.sc-introduction {
+.sc-introduction {}
+
+.introduction-wrap {
     overflow: hidden;
 }
 
-.introduction-wrap {
+.introduction-area {
     display: flex;
     justify-content: space-between;
 }
@@ -99,7 +106,11 @@ aside .close-btn span {
 .introduction-item02 {
     margin-right: 7vw;
     width: 25%;
-    height: 700px;
     margin-top: 200px;
+}
 
+.introduction-item03 {
+    width: 15%;
+    text-align: center;
+    margin-top: 200px;
 }

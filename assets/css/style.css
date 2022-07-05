@@ -1,6 +1,7 @@
-.sc-main{
+.sc-main {
     position: relative;
 }
+
 .sc-main .txt-area {
     position: absolute;
     top: 30%;
@@ -8,147 +9,172 @@
     transform: translate(-50%, -50%);
     color: #fff;
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
-.sc-main .txt-area h2{
+
+.sc-main .txt-area h2 {
     opacity: .7;
     font-size: 8em;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
-.sc-main .txt-area span{
+
+.sc-main .txt-area span {
     font-size: 1.5em;
     margin-bottom: 14px;
     display: block;
 }
-.sc-main .bg-area img{
+
+.sc-main .bg-area img {
     width: 100%;
 }
-.sc-main .sub-txt{
+
+.sc-main .sub-txt {
     text-align: center;
     padding: 100px 0;
 }
-.sc-main .sub-txt strong{
+
+.sc-main .sub-txt strong {
     font-size: 43px;
     font-weight: bold;
     line-height: 50px;
 }
-.sc-main .sub-txt p{
+
+.sc-main .sub-txt p {
     font-size: 20px;
     line-height: 24px;
     margin-top: 16px;
 }
 
-.sc-wide .wide-wrap{
+.sc-wide .wide-wrap {
     width: 100%;
     height: 100vh;
     background: #fff;
     border-radius: 50%;
     overflow: hidden;
 }
-.sc-wide .wide-wrap img{
+
+.sc-wide .wide-wrap img {
     width: 100%;
     height: 100vh;
 }
 
-.sc-product{
+.sc-product {
     position: relative;
     margin-top: 70px;
 }
-.sc-product .pro-txt{
+
+.sc-product .pro-txt {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 30px 0;
 }
-.sc-product .pro-txt .title{
+
+.sc-product .pro-txt .title {
     text-align: left;
 
 }
-.sc-product .pro-txt .title+.title{
+
+.sc-product .pro-txt .title+.title {
     text-align: right;
 }
-.sc-product .pro-img{
+
+.sc-product .pro-img {
     display: flex;
     justify-content: center;
 }
-.sc-product .pro-item{
+
+.sc-product .pro-item {
     position: relative;
     overflow: hidden;
 }
-.sc-product .pro-item img:hover{
-    transform:scale(1.1);
+
+.sc-product .pro-item img:hover {
+    transform: scale(1.1);
     transition: transform .5s;
 }
-.sc-product .pro-item:first-child{
+
+.sc-product .pro-item:first-child {
     margin-right: 50px;
 }
-.sc-product .item-txt{
+
+.sc-product .item-txt {
     position: absolute;
     bottom: 30px;
-    left:30px;
+    left: 30px;
     color: #fff;
 }
-.sc-product .pro-item p{
+
+.sc-product .pro-item p {
     font-size: 18px;
 }
-.sc-product .pro-item a{
+
+.sc-product .pro-item a {
     display: inline-block;
     padding: 12px 28px;
-    background:#000;
+    background: #000;
     border-radius: 20px;
     margin-top: 20px;
 }
-.sc-product .pro-item a:hover{
+
+.sc-product .pro-item a:hover {
     opacity: .8;
 }
-.video-wrap{
-    padding:100px 100px;
+
+.video-wrap {
+    padding: 100px 100px;
 }
-.video-wrap video{
+
+.video-wrap video {
     width: 100%;
 }
 
-.archive{
+.archive {
     position: relative;
 }
 
-.archive .archive-wrap{
+.archive .archive-wrap {
     display: flex;
     position: relative;
     margin: 0px 100px;
 }
-.archive-wrap .archive-left{
+
+.archive-wrap .archive-left {
     border-bottom-right-radius: 50%;
     width: 40%;
     overflow: hidden;
 }
-.archive .archive-txt{
+
+.archive .archive-txt {
     position: absolute;
     left: 52%;
     top: 10%;
     transform: translateX(-50%);
 }
-.archive-wrap .title{
+
+.archive-wrap .title {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
 }
-.archive-wrap p{
+
+.archive-wrap p {
     font-size: 16px;
     line-height: 20px;
     margin-left: 50px;
 }
-.archive-wrap .archive-right{
 
-}
-.archive-wrap .right-item-01{
+.archive-wrap .archive-right {}
+
+.archive-wrap .right-item-01 {
     position: absolute;
     right: 0;
     width: 300px;
     z-index: 2;
     height: 375px;
 }
-.archive-wrap .right-item-02{
+
+.archive-wrap .right-item-02 {
     position: absolute;
     right: 170px;
     bottom: 80px;
@@ -156,48 +182,11 @@
     height: 312px;
 }
 
-.slide{
-    padding:100px 0;
+.slide {
+    padding: 100px 0;
 }
-
-  .ipsGrid {
-      width: 100%;
-  }
-  .ipsGrid::before, .ipsGrid::after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  .ipsGrid > [class*="ipsGrid_span"] {
-    display: block;
-    width: 100%;
-    min-height: 30px;
-    box-sizing: border-box;
-  }
-  .ipsGrid > [class*="ipsGrid_span"] {
-    float: left;
-    margin-left: 2%;
-  }
-  .ipsGrid > [class*="ipsGrid_span"]:first-child {
-    margin-left: 0;
-  }
-  .features {
-    display: flex;
-    align-items: center;
-  }
-  .features img{
-      width: 100%;
-  }
-
-
 
 .mySwiper {
     width: 80vw;
     height: 50vw;
 }
-
-
-
-
-
-

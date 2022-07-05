@@ -9,6 +9,19 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 $(function(){
+
+  last = 0
+  $(window).scroll(function(){
+    curr = $(this).scrollTop();
+
+    if (curr > last) {
+      $('header').addClass('active')
+    } else {
+      $('header').removeClass('active') 
+    }
+
+    last = curr;
+  })
   
   gsap.to('.wide-wrap', {
     scrollTrigger: {
@@ -58,7 +71,7 @@ const intro = gsap.timeline({
     pin:true,
     scrub:0.5,
     start:'top top',
-    end:'+=1500',
+    end:'+=3000',
     markers:true
   }
 })
@@ -66,8 +79,8 @@ const intro = gsap.timeline({
 .addLabel('motion1')
 intro.from('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent:-300},'motion1')
 .from('.sc-introduction .introduction-wrap .img-wrap02',{scale:2, xPercent: 300,},'motion1')
-.from('.sc-introduction .introduction-wrap',{yPercent:500},'motion1')
+.from('.sc-introduction .introduction-wrap .img-wrap03',{scale:2, yPercent: 20,},'motion1')
 
-// .from('.sc-introduction .introduction-wrap img p',{yPercent: 200},'label1')
+.from('.sc-introduction .introduction-wrap p',{yPercent: 200},'label1')
 
 }); // 마지막 감싸기
