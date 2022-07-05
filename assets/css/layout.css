@@ -1,45 +1,105 @@
 @import './reset.css';
 @import './common.css';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-.header{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+.header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background:#fff;
+    background: #fff;
     z-index: 10;
+    border-bottom: 1px solid #ccc;
 }
-.header .inner{
+
+.header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 6vw;
+    padding: 4px 6vw;
 }
-.header .logo{
+
+.header .logo {
     background: url(../images/acg-logo.png);
     background-repeat: no-repeat;
-    background-size:contain;
-    width: 80px;
-    height: 80px;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
 }
-.header .gnb .nav{
+
+.header .gnb .nav {
     display: flex;
 }
-.nav li{
+
+.nav li {
     padding: 0 40px;
     font-size: 18px;
 }
-.top-menu{
+
+.top-menu {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
-.top-menu span{
+
+.top-menu span {
     width: 33px;
     height: 2px;
     background: #000;
     vertical-align: top;
 }
-.top-menu span+span{
+
+.top-menu span+span {
     margin-top: 7px;
+}
+
+aside {
+    width: 100%;
+    height: 100vh;
+    background: #15242e;
+    overflow: hidden;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+aside .aside-wrap {
+    display: flex;
+}
+
+aside .aside-item {
+    flex: 1;
+}
+
+aside .close-btn span {
+    width: 30px;
+    height: 2px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: block;
+    margin-right: 10px;
+}
+
+.sc-introduction {
+    overflow: hidden;
+}
+
+.introduction-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction-item01 {
+    margin-left: 7vw;
+    width: 30%;
+    margin-top: 250px;
+}
+
+.introduction-item02 {
+    margin-right: 7vw;
+    width: 25%;
+    height: 700px;
+    margin-top: 200px;
+
 }

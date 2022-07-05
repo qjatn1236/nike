@@ -10,3 +10,7 @@ body{
     overflow: hidden;
     width: 1px;height: 1px;
 }
+.title{
+    font-size: 3vw;
+    font-weight: 500;
+}
