@@ -36,19 +36,19 @@
     display: flex;
 }
 
-.nav li {
-    padding: 0 40px;
+.nav>li {
+    padding: 0 26px;
     font-size: 18px;
 }
 
-.header .nav a {
+.header .nav-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     opacity: .7;
     transition: .3s;
 }
 
-.header .nav a:hover {
+.header .nav-title:hover {
     opacity: 1;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .depth2-inner {
-    max-width: 1344px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -110,11 +110,29 @@
     padding: 16px 8px 0;
     vertical-align: top;
     text-align: left;
-    opacity: 0;
+    /* opacity: 0;
     transform: translateY(-10px);
     box-sizing: border-box;
     transition: transform .1s, opacity .1s;
-    transition-delay: 0s;
+    transition-delay: 0s; */
+}
+
+.pre-menu a {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.428571;
+    color: #757575;
+}
+
+
+.pre-menu .depth-title {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
 }
 
 /* 헤더부분 끝 */

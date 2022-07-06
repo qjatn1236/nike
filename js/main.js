@@ -39,11 +39,9 @@ $(function(){
 
   $('.nav > li').mouseover(function(){
     $(this).children('.sub-menu').css({"opacity":"1","visibility":"visible","transform":"scaleY(1)"})
-    $('.pre-menu').css('opacity','1')
   })
   $('.nav > li').mouseleave(function(){
     $(this).children('.sub-menu').css({"opacity":"0","visibility":"hidden","transform":"scaleY(0)"})
-    $('.pre-menu').css('opacity','0')
   })
 
   
