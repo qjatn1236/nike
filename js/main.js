@@ -28,7 +28,7 @@ $(function(){
       trigger: '.sc-wide',
       start: 'top top',
       end: '+=3000',
-      markers: true,
+      // markers: true,
       scrub: 1,
       pin: true,
     },
@@ -72,7 +72,7 @@ const intro = gsap.timeline({
     scrub:0.5,
     start:'top top',
     end:'+=3000',
-    markers:true
+    // markers:true
   }
 })
 
@@ -80,7 +80,26 @@ const intro = gsap.timeline({
 intro.from('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent:-300},'motion1')
 .from('.sc-introduction .introduction-wrap .img-wrap02',{scale:2, xPercent: 300,},'motion1')
 .from('.sc-introduction .introduction-wrap .img-wrap03',{scale:2, yPercent: 20,},'motion1')
+// .from('.sc-introduction .introduction-wrap p',{yPercent: 100},'motion1')
 
-.from('.sc-introduction .introduction-wrap p',{yPercent: 200},'label1')
+
+// .addLabel('motion2')
+// intro.to('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent: -300,},'motion2')
+// .to('.sc-introduction .introduction-wrap .img-wrap02',{scale:2, xPercent: 300,},'motion2')
+// .to('.sc-introduction .introduction-wrap .img-wrap03',{rotate:-90},'motion2')
+// .to('.sc-introduction .introduction-wrap p',{yPercent: 1000},'motion2')
+
+// const intro2 = gsap.timeline({
+//   scrollTrigger:{
+//     trigger:'#footer',
+//     pin:true,
+//     scrub:0.5,
+//     start:'center bottom',
+//     end:'bottom bottom',
+//     // markers:true
+//   }
+// })
+// .addLabel('motion2')
+// intro2.to('.sc-introduction .introduction-wrap .img-wrap03',{rotate:-90},'motion2')
 
 }); // 마지막 감싸기
