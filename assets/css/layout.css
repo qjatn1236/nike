@@ -41,6 +41,17 @@
     font-size: 18px;
 }
 
+.header .nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: .8;
+    transition: .3s;
+}
+
+.header .nav a:hover {
+    opacity: 1;
+}
+
 .top-menu {
     display: flex;
     flex-direction: column;
@@ -113,6 +124,7 @@ aside .close-btn .close02 {
 #footer {
     background: #000;
     color: #999;
+    margin-top: 100px;
 }
 
 #footer .width-wrap {

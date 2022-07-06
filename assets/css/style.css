@@ -42,7 +42,7 @@
 
 .sc-main .sub-txt p {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
     margin-top: 16px;
 }
 
@@ -121,68 +121,54 @@
     opacity: .8;
 }
 
-.video-wrap {
-    padding: 100px 100px;
+.collection {
+    padding: 100px 100px 50px 100px;
 }
+
+.video-wrap {}
 
 .video-wrap video {
     width: 100%;
 }
 
-.archive {
-    position: relative;
+.collection-txt {
+    max-width: 972px;
+    margin: 24px auto 50px;
 }
 
-.archive .archive-wrap {
-    display: flex;
-    position: relative;
-    margin: 0px 100px;
+.collection-txt .col01 {
+    margin-bottom: 5px;
 }
 
-.archive-wrap .archive-left {
-    border-bottom-right-radius: 50%;
-    width: 40%;
-    overflow: hidden;
+.collection-txt .col02 {
+    font-size: 43px;
+    margin-bottom: 13px;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.archive .archive-txt {
-    position: absolute;
-    left: 52%;
-    top: 10%;
-    transform: translateX(-50%);
+.collection-txt .col03 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.archive-wrap .title {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
+.collection-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+    transition: .3s;
 }
 
-.archive-wrap p {
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 50px;
-}
-
-.archive-wrap .archive-right {}
-
-.archive-wrap .right-item-01 {
-    position: absolute;
-    right: 0;
-    width: 300px;
-    z-index: 2;
-    height: 375px;
-}
-
-.archive-wrap .right-item-02 {
-    position: absolute;
-    right: 170px;
-    bottom: 80px;
-    width: 250px;
-    height: 312px;
+.collection-btn:hover {
+    opacity: .8;
 }
 
 .slide {
-    padding: 100px 0;
+    margin-bottom: 100px;
 }
 
 .mySwiper {
@@ -203,14 +189,14 @@
 
 .introduction-item01 {
     margin-left: 7vw;
-    width: 30%;
-    margin-top: 250px;
+    width: 27%;
+    margin-top: 150px;
 }
 
 .introduction-item02 {
     margin-right: 7vw;
     width: 25%;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .introduction-item03 {
@@ -218,4 +204,26 @@
     text-align: center;
     margin-top: 250px;
     z-index: 1;
+}
+
+.introduction-wrap .txt-wrap {
+    margin-top: 50px;
+}
+
+.introduction-wrap .txt-top {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.introduction-wrap .txt-bot {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.introduction-wrap .txt-wrap .select {
+    color: #000;
+    font-weight: bold;
 }

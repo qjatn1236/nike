@@ -67,11 +67,11 @@ $(function(){
 
 const intro = gsap.timeline({
   scrollTrigger:{
-    trigger:'.introduction-wrap',
+    trigger:'.introduction-area',
     pin:true,
     scrub:0.5,
     start:'top top',
-    end:'+=3000',
+    end:'+=4000',
     // markers:true
   }
 })
@@ -80,7 +80,7 @@ const intro = gsap.timeline({
 intro.from('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent:-300},'motion1')
 .from('.sc-introduction .introduction-wrap .img-wrap02',{scale:2, xPercent: 300,},'motion1')
 .from('.sc-introduction .introduction-wrap .img-wrap03',{scale:2, yPercent: 20,},'motion1')
-// .from('.sc-introduction .introduction-wrap p',{yPercent: 100},'motion1')
+.from('.sc-introduction .introduction-wrap p',{yPercent: 100},'motion1')
 
 
 // .addLabel('motion2')
