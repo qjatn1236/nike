@@ -44,7 +44,7 @@
 .header .nav a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    opacity: .8;
+    opacity: .7;
     transition: .3s;
 }
 
@@ -52,74 +52,72 @@
     opacity: 1;
 }
 
-.top-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+.header .user-wrap {
+    position: relative;
 }
 
-.top-menu span {
-    width: 33px;
-    height: 2px;
-    background: #000;
-    vertical-align: top;
-}
-
-.top-menu span+span {
-    margin-top: 7px;
-}
-
-aside {
-    width: 100%;
-    height: 100vh;
-    background: #15242e;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    color: #fff;
-    display: none;
-    position: absolute;
-    top: 0;
-}
-
-aside .aside-wrap {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-aside .aside-item {
-    flex: 1;
-}
-
-aside .close-wrap {}
-
-aside .close-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    background: #f7f8f0;
-    border-radius: 50%;
-}
-
-aside .close-area {}
-
-aside .close-btn span {
-    height: 2px;
-    background: #000;
+.header .user-wrap>ul>li>a {
     display: block;
-    width: 50px;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 40px;
 }
 
-aside .close-btn .close01 {
-    transform: rotate(45deg);
+.header .user-wrap>ul>li>a:hover {
+    opacity: .5;
 }
 
-aside .close-btn .close02 {
-    transform: rotate(-45deg);
+.header .user-wrap li {
+    display: inline-block;
 }
+
+.header .user-wrap li+li::after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 1px;
+    height: 10px;
+    background: #999;
+    position: absolute;
+    top: 15px;
+}
+
+.sub-menu {
+    padding: 16px 40px 40px;
+    white-space: nowrap;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    max-height: 800px;
+    top: 79px;
+    left: 0;
+    right: 0;
+    transition: transform .1s ease, opacity 0ms linear .1s, visibility 0ms linear .1s;
+    transform-origin: top center;
+    transform: scaleY(0);
+}
+
+.depth2-inner {
+    max-width: 1344px;
+    margin: 0 auto;
+}
+
+.pre-menu {
+    display: inline-block;
+    width: 16.666666666666664%;
+    padding: 16px 8px 0;
+    vertical-align: top;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(-10px);
+    box-sizing: border-box;
+    transition: transform .1s, opacity .1s;
+    transition-delay: 0s;
+}
+
+/* 헤더부분 끝 */
 
 #footer {
     background: #000;
@@ -261,4 +259,3 @@ aside .close-btn .close02 {
     width: 24px;
     height: 24px;
     display: inline-block;
-}

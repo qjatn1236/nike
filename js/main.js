@@ -22,6 +22,30 @@ $(function(){
 
     last = curr;
   })
+
+
+
+  $('.depth1').click(function(e){
+    e.preventDefault();
+
+    if ($(this).siblings('.sub').css('display') == 'block') {
+        $(this).siblings('.sub').stop().slideUp();
+    } else {
+        $('.sub').stop().slideUp();
+        $(this).siblings().stop().slideDown();
+    }
+
+})
+
+  $('.nav > li').mouseover(function(){
+    $(this).children('.sub-menu').css({"opacity":"1","visibility":"visible","transform":"scaleY(1)"})
+    $('.pre-menu').css('opacity','1')
+  })
+  $('.nav > li').mouseleave(function(){
+    $(this).children('.sub-menu').css({"opacity":"0","visibility":"hidden","transform":"scaleY(0)"})
+    $('.pre-menu').css('opacity','0')
+  })
+
   
   gsap.to('.wide-wrap', {
     scrollTrigger: {
@@ -33,14 +57,6 @@ $(function(){
       pin: true,
     },
     borderRadius: 0,
-  });
-  
-  $('.top-menu').click(function () {
-    $('aside').css('display', 'block');
-  });
-  
-  $('.close-btn').click(function () {
-    $('aside').css('display', 'none');
   });
   
   var $sections = document.querySelectorAll('.horizon_box');
@@ -82,24 +98,5 @@ intro.from('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent:
 .from('.sc-introduction .introduction-wrap .img-wrap03',{scale:2, yPercent: 20,},'motion1')
 .from('.sc-introduction .introduction-wrap p',{yPercent: 100},'motion1')
 
-
-// .addLabel('motion2')
-// intro.to('.sc-introduction .introduction-wrap .img-wrap01',{scale:2, xPercent: -300,},'motion2')
-// .to('.sc-introduction .introduction-wrap .img-wrap02',{scale:2, xPercent: 300,},'motion2')
-// .to('.sc-introduction .introduction-wrap .img-wrap03',{rotate:-90},'motion2')
-// .to('.sc-introduction .introduction-wrap p',{yPercent: 1000},'motion2')
-
-// const intro2 = gsap.timeline({
-//   scrollTrigger:{
-//     trigger:'#footer',
-//     pin:true,
-//     scrub:0.5,
-//     start:'center bottom',
-//     end:'bottom bottom',
-//     // markers:true
-//   }
-// })
-// .addLabel('motion2')
-// intro2.to('.sc-introduction .introduction-wrap .img-wrap03',{rotate:-90},'motion2')
 
 }); // 마지막 감싸기
