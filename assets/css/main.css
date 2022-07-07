@@ -1,0 +1,273 @@
+.sc-main {
+    position: relative;
+}
+
+.sc-main .txt-area {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.sc-main .txt-area h2 {
+    font-size: 120px;
+    font-weight: bold;
+    color: #eb321a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sc-main .txt-area span {
+    font-size: 24px;
+    margin-bottom: 14px;
+    display: block;
+    color: #fff;
+    margin: 30px 0;
+}
+
+.sc-main .txt-area p {
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.sc-main .bg-area {
+    height: 150vh;
+    padding-left: 10vw;
+    padding-top: 40vh;
+}
+
+.sc-main .bg-area .img-box {
+    height: 100%;
+    border-top-left-radius: 30vw;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+.sc-main .bg-area img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.sc-guide {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.sc-guide .sub-txt h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.sc-guide .sub-txt p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+.wide-area {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.wide-area .wide-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    border-radius: 12vw;
+}
+
+.wide-area .wide-wrap .wide-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wide-area .wide-wrap .logo-img {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wide-area .wide-wrap .logo-img img {
+    width: 300px;
+}
+
+.sc-product {
+    position: relative;
+    margin-top: 70px;
+}
+
+.sc-product .pro-txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.sc-product .pro-txt .title span {
+    display: block;
+    font-size: 70px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sc-product .pro-img {
+    display: flex;
+    justify-content: center;
+}
+
+.sc-product .pro-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.sc-product .pro-item img:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.sc-product .pro-item:first-child {
+    margin-right: 50px;
+}
+
+.sc-product .item-txt {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+}
+
+.sc-product .pro-item p {
+    font-size: 18px;
+}
+
+.sc-product .pro-item a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.sc-product .pro-item a:hover {
+    opacity: .8;
+}
+
+.collection {
+    padding: 100px 100px 50px 100px;
+}
+
+.video-wrap {}
+
+.video-wrap video {
+    width: 100%;
+}
+
+.collection-txt {
+    max-width: 1000px;
+    margin: 24px auto 50px;
+}
+
+.collection-txt .col01 {
+    margin-bottom: 5px;
+}
+
+.collection-txt .col02 {
+    font-size: 43px;
+    margin-bottom: 13px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.collection-txt .col03 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.collection-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+    transition: .3s;
+}
+
+.collection-btn:hover {
+    opacity: .8;
+}
+
+.slide {
+    margin-bottom: 100px;
+}
+
+.mySwiper {
+    width: 80vw;
+    height: 50vw;
+}
+
+.sc-introduction {}
+
+.introduction-wrap {
+    overflow: hidden;
+}
+
+.introduction-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction-item01 {
+    margin-left: 7vw;
+    width: 27%;
+    margin-top: 150px;
+}
+
+.introduction-item02 {
+    margin-right: 7vw;
+    width: 25%;
+    margin-top: 200px;
+}
+
+.introduction-item03 {
+    width: 15%;
+    text-align: center;
+    margin-top: 250px;
+    z-index: 1;
+}
+
+.introduction-wrap .txt-wrap {
+    margin-top: 50px;
+}
+
+.introduction-wrap .txt-top {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.introduction-wrap .txt-bot {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.introduction-wrap .txt-wrap .select {
+    color: #000;
+    font-weight: bold;
+}

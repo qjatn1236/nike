@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 @import './reset.css';
 @import './common.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
-
-.header.active {
-    top: -80px;
-}
 
 .header {
     position: fixed;
@@ -13,18 +11,25 @@
     left: 0;
     background: #fff;
     z-index: 10;
-    border-bottom: 1px solid #ccc;
     transition: .4s;
+}
+
+.header.active {
+    top: -80px;
 }
 
 .header .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 4px 6vw;
+    height: 80px;
 }
 
 .header .logo {
+    position: absolute;
+    top: 50%;
+    left: 6vw;
+    transform: translateY(-50%);
     background: url(../images/acg-logo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -32,46 +37,102 @@
     height: 70px;
 }
 
-.header .gnb .nav {
-    display: flex;
+.header .logo a {
+    display: block;
+    height: 100%;
 }
 
-.nav>li {
+.header .gnb .nav {
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+}
+
+.gnb .nav-list .nav-item {
     padding: 0 26px;
     font-size: 18px;
 }
 
-.header .nav-title {
-    font-family: 'Montserrat', sans-serif;
+.gnb .nav-list .nav-title {
     font-weight: 500;
-    opacity: .7;
     transition: .3s;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header .nav-title:hover {
+.gnb .nav-item .sub-menu {
+    padding: 16px 40px 40px;
+    white-space: nowrap;
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    right: 0;
+}
+
+.gnb .nav-item .sub-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gnb .nav-item .sub-area {
+    display: inline-block;
+    width: 25%;
+    padding: 16px 8px 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.gnb .nav-item .sub-area a {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.428571;
+    color: #757575;
+}
+
+.gnb .nav-item .sub-area .depth-title {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+}
+
+.sub-menu>* {
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
+}
+
+.sub-menu.active>* {
     opacity: 1;
 }
 
-.header .user-wrap {
-    position: relative;
+.header .user-area {
+    position: absolute;
+    top: 50%;
+    right: 6vw;
+    transform: translateY(-50%);
 }
 
-.header .user-wrap>ul>li>a {
+.header .user-area a {
     display: block;
     padding: 0 10px;
     font-size: 12px;
     line-height: 40px;
 }
 
-.header .user-wrap>ul>li>a:hover {
+.header .user-area a:hover {
     opacity: .5;
 }
 
-.header .user-wrap li {
+.header .user-area .user-list {
     display: inline-block;
 }
 
-.header .user-wrap li+li::after {
+.header .user-list+.user-list::after {
     content: '';
     display: inline-block;
     vertical-align: top;
@@ -80,59 +141,6 @@
     background: #999;
     position: absolute;
     top: 15px;
-}
-
-.sub-menu {
-    padding: 16px 40px 40px;
-    white-space: nowrap;
-    background: #fff;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    overflow: hidden;
-    max-height: 800px;
-    top: 79px;
-    left: 0;
-    right: 0;
-    transition: transform .1s ease, opacity 0ms linear .1s, visibility 0ms linear .1s;
-    transform-origin: top center;
-    transform: scaleY(0);
-}
-
-.depth2-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.pre-menu {
-    display: inline-block;
-    width: 16.666666666666664%;
-    padding: 16px 8px 0;
-    vertical-align: top;
-    text-align: left;
-    /* opacity: 0;
-    transform: translateY(-10px);
-    box-sizing: border-box;
-    transition: transform .1s, opacity .1s;
-    transition-delay: 0s; */
-}
-
-.pre-menu a {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 14px;
-    line-height: 1.428571;
-    color: #757575;
-}
-
-
-.pre-menu .depth-title {
-    display: block;
-    margin-bottom: 14px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #111;
 }
 
 /* 헤더부분 끝 */
