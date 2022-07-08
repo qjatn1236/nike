@@ -182,13 +182,13 @@
     color: #999
 }
 
-#footer .foot-nav dl dt {
+#footer .foot-nav h3 {
     font-size: 13px;
     color: #fff;
     padding-bottom: 0;
 }
 
-#footer .foot-nav dl dd {
+#footer .foot-nav li {
     margin-top: 8px;
     font-size: 11px;
 }
@@ -239,6 +239,7 @@
 #footer .foot-company {
     padding: 16px 0 25px;
     font-size: 11px;
+    line-height: 1.6;
 }
 
 #footer .foot-company a {
@@ -285,3 +286,4 @@
     width: 24px;
     height: 24px;
     display: inline-block;
+}
